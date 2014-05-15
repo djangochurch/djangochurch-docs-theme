@@ -1,25 +1,19 @@
-# -*- coding: utf-8 -*-
-"""`sphinx_rtd_theme` lives on `Github`_.
-
-.. _github: https://www.github.com/snide/sphinx_rtd_theme
-
-"""
 from setuptools import setup
-from sphinx_rtd_theme import __version__
+from djangochurch_docs_theme import __version__
 
 
 setup(
-    name='sphinx_rtd_theme',
+    name='djangochurch-docs-theme',
     version=__version__,
-    url='https://github.com/snide/sphinx_rtd_theme/',
+    url='https://github.com/djangochurch/djangochurch_docs_theme/',
     license='MIT',
-    author='Dave Snider',
-    author_email='dave.snider@gmail.com',
-    description='ReadTheDocs.org theme for Sphinx, 2013 version.',
+    author='Django Church',
+    author_email='info@djangochurch.org',
+    description='Django Church Sphinx theme.',
     long_description=open('README.rst').read(),
     zip_safe=False,
-    packages=['sphinx_rtd_theme'],
-    package_data={'sphinx_rtd_theme': [
+    packages=['djangochurch_docs_theme'],
+    package_data={'djangochurch_docs_theme': [
         'theme.conf',
         '*.html',
         'static/css/*.css',
