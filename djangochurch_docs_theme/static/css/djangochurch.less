@@ -1,1 +1,82 @@
 @import (inline) "theme.css";
+
+@black: #222222;
+@brand: #994897;
+@text:  #595959;
+
+body  {
+    font-family: 'Ubuntu', Arial;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+.wy-body-for-nav {
+    background: @black;
+}
+
+h1, h2, h3, h4, h5, h6, legend {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+a { color: @brand;
+    &:hover {
+        color: lighten(@brand, 10%);
+    }
+}
+
+.btn, .btn-neutral {
+    font-family: 'Ubuntu', Arial;
+    font-weight: 400;
+    background: @brand;
+    border: none;
+    color: white;
+}
+
+.wy-nav-content {
+    background: white;
+}
+
+.wy-nav-side {
+    background: @black;
+}
+
+.wy-side-nav-search {
+    background: @black url(../img/logo.png) top center no-repeat;
+    min-height: 180px;
+    .fa-home {
+        display: block;
+        height: 85px;
+        text-indent: -100em;
+        overflow: hidden;
+        &:hover { background: none; }
+    }
+    input[type=text] {
+        border-color: #e2e2e2;
+        background: white;
+        box-shadow:none;
+    }
+}
+
+.wy-menu-vertical {
+    a:hover {
+        background: @brand;
+        color: white;
+    }
+    li.current a {
+        background: @brand;
+        color: white;
+        border: none;
+        &:hover {
+            background: @black;
+            color: white;
+        }
+    }
+    li.current>a {
+        background: white;
+        color: @black;
+    }
+}
